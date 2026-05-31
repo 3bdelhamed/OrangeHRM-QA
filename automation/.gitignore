@@ -1,0 +1,30 @@
+# Maven
+target/
+*.class
+*.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.eclipse/
+*.classpath
+*.project
+.settings/
+
+# Test output
+test-output/
+allure-results/
+allure-report/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env (never commit credentials)
+.env
+local.properties

@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM Automation Suite" verbose="2" parallel="false" thread-count="1">
+
+    <listeners>
+        <listener class-name="com.orangehrm.qa.listeners.AllureListener"/>
+        <listener class-name="com.orangehrm.qa.listeners.RetryTransformer"/>
+    </listeners>
+
+    <test name="OrangeHRM Execution" preserve-order="true">
+        <classes>
+            <class name="com.orangehrm.qa.tests.LoginTests"/>
+            <class name="com.orangehrm.qa.tests.DashboardTests"/>
+            <class name="com.orangehrm.qa.tests.EmployeeTests"/>
+            <!-- <class name="com.orangehrm.qa.tests.LeaveTests"/> -->
+            <class name="com.orangehrm.qa.tests.AdminTests"/>
+        </classes>
+    </test>
+
+</suite>
